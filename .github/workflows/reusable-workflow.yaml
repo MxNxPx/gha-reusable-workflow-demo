@@ -6,6 +6,9 @@ on:
       command:
         required: true
         type: string
+      var:
+        required: true
+        type: string
 
 jobs:
   run-command:
