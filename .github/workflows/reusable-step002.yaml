@@ -12,5 +12,5 @@ jobs:
     name: 'echo-var'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.3.0
       - run: echo "${{inputs.var}}"
