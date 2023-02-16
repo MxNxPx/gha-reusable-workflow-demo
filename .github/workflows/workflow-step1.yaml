@@ -1,8 +1,10 @@
-name: hello-world
+name: "hello-world"
+
 on: push
+
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: my-step
-        run: echo "Hello World!"
+  hello-world:
+    uses: MxNxPx/gha-reusable-workflow-demo/.github/workflows/reusable-workflow.yaml@main
+    with:
+      command: 'echo "Hello World!"'
+
