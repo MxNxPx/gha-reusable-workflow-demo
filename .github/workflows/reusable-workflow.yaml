@@ -1,4 +1,4 @@
-name: Run Command
+name: Pipeline
 
 on:
   workflow_call:
