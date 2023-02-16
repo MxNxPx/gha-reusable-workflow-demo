@@ -1,0 +1,16 @@
+name: Run Command
+
+on:
+  workflow_call:
+    inputs:
+      command:
+        required: true
+        type: string
+
+jobs:
+  run-command:
+    name: 'run-command'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: ${{inputs.command}}
