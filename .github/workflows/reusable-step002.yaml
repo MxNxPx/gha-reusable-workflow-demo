@@ -1,0 +1,16 @@
+name: Step-002
+
+on:
+  workflow_call:
+    inputs:
+      var:
+        required: true
+        type: string
+
+jobs:
+  run-command:
+    name: 'echo-var'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "${{inputs.var}}"
