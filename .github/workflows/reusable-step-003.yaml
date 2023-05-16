@@ -1,10 +1,16 @@
 name: Step-003
 
-on:
-  workflow_call:
-    inputs:
-      var:
-        required: true
+#on:
+#  workflow_call:
+#    inputs:
+#      var:
+#        required: false
+#        type: string
+
+jobs:
+  run-command:
+    name: 'echo-short-sha'
+    runs-on: ubuntu-latest
         type: string
 
 jobs:
